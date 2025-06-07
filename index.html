@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MY PORTFOLIO</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body class="text-white overflow-x-hidden" style="background-color: #282C33;font-family: 'Fira Code', monospace;">
+  <nav
+    class=" md:flex  md:space-x-72 lg:space-x-0 lg:justify-between md:ml-2 lg:ml-32 xl:ml-10  md:items-center  md:mt-5 md:justify-around md:px-0 lg:gap-[20rem] md:text-base">
+    <div class="flex  justify-between  md:mx-0 mx-4  md:mt-0 mt-5 items-center md:mb-0 mb-20">
+
+      <div class="flex items-center   ml-2 gap-2 lg:mr-32 xl:mr-56 lg:ml-1 xl:ml-[7.4rem]   md:ml-28 md:mr-32">
+        <img src="images/Union.png" class="w-4">
+        <p class="font-bold w-12">David</p>
+      </div>
+
+      <div class="md:hidden " id="open-menu">
+        <div class="w-6  h-1  bg-[#D9D9D9] mb-1.5"></div>
+        <div class="w-4 h-1  bg-[#D9D9D9] ml-2"></div>
+      </div>
+    </div>
+
+
+    <div
+      class="fixed sm:static w-full -top-[100%] sm:insert-0 left-0 h-full   bg-[#282C33]  p-4 sm:p-0 transition-top 0.3s ease-in-out z-50  sm:z-auto sm:transition-none"
+      id="nav-menu">
+      <div class="flex items-center gap-2  sm:hidden">
+        <img src="images/Union.png" class="w-4">
+        <p class="font-bold w-12">David</p>
+      </div>
+
+      <ul class="md:flex gap-10 relative xl:ml-0 mt-16 sm:mt-0 sm:leading-none leading-[60px] md:items-center">
+        <div class="text-[#ABB2BF]  text-[60px] absolute right-0 -mt-28  cursor-pointer sm:hidden" id="close-menu">
+          &times;</div>
+
+        <li><a href="#home" class="md:font-medium text-[32px] sm:text-base"><span
+              class="text-[#C778DD] ">#</span>home</a></li>
+        <li><a href="#work" class="text-gray-400 text-[32px] sm:text-base"><span
+              class="text-[#C778DD]">#</span>works</a></li>
+        <li><a href="#about-me" class="text-gray-400   text-[32px] sm:text-base whitespace-nowrap"><span
+              class="text-[#C778DD]">#</span>about-me</a></li>
+        <li><a href="#contact" class="text-gray-400  text-[32px] sm:text-base"><span
+              class="text-[#C778DD]">#</span>contacts</a></li>
+        <select class="bg-transparent text-gray-400  text-[32px] sm:text-base">
+          <option>EN</option>
+        </select>
+      </ul>
+
+
+      <div class="flex justify-center sm:hidden gap-4 pt-10">
+        <a href="https://github.com/DE-WebDev">
+          <img src="images/Github.png" alt="github" class=" w-[64px]" title="github">
+        </a>
+        <a href="https://dribbble.com/Dave-07">
+          <img src="images/Dribble.png" alt="dribble" class=" w-[64px] " title="dribble">
+        </a>
+        <a
+          href="https://www.figma.com/files/team/1371911806218491679/user/1371911804005777204?fuid=1371911804005777204">
+          <img src="images/Figma.png" alt="figma" class="w-[64px]" title="figma">
+      </div>
+    </div>
+  </nav>
+
+  <section class="h-screen md:h-[100%]">
+    <div class="md:flex">
+      <div class="lg:ml-4 md:ml-6 xl:ml-5 -mt-[2.8rem] hidden md:block ">
+        <img src="images/Line 10 (Stroke) (1).png" class="ml-3 mb-1 md:h-36  lg:h-48" alt="line">
+        <a href="https://github.com/DE-WebDev">
+          <img src="images/Github.png" alt="github" class="mb-3 max-w-md" title="github">
+        </a>
+        <a href="https://dribbble.com/Dave-07">
+          <img src="images/Dribble.png" alt="dribble" class="mb-2 " title="dribble">
+        </a>
+        <a
+          href="https://www.figma.com/files/team/1371911806218491679/user/1371911804005777204?fuid=1371911804005777204">
+          <img src="images/Figma.png" alt="figma" title="figma">
+        </a>
+      </div>
+
+      <div class="md:flex justify-between md:w-fit md:mx-16 -mt-6 md:mt-20 lg:mt-28 xl:mt-36 lg:ml-20 xl:ml-[6.8rem]">
+        <div class="md:mb-[6rem]">
+          <h1 class="text-3xl font-semibold w-[80%] ml-5 md:ml-0 md:w-[38rem] mb-5 leading-snug">David is a <span
+              class="text-[#C778DD]">web designer</span> and <span class="text-[#C778DD]">front-end developer</span>
+          </h1>
+          <p class="text-[#ABB2BF] text-base ml-5  w-[89%] md:w-[30rem] md:ml-1">He crafts responsive websites where
+            technologies meet creativity</p>
+          <button class="ml-1 hidden  md:block mt-5 bg-transparent border border-[#C778DD] py-1 px-2 w-[9rem] ">Contact
+            me!!</button>
+        </div>
+
+        <div class="relative lg:-ml-10 md:w-[28rem]  lg:-mt-24 xl:-mt-36 -mt-[4rem] md:-ml-12 md:h-[20rem] w-full">
+          <img src="images/home-Logo.png" alt="home logo"
+            class="absolute z-10  w-28 -bottom-64 xl:w-40 ml-6 lg:left-[6%] md:top-28 md:-left-4 lg:-left-3 lg:top-28 xl:top-36 xl:left-2">
+          <img src="images/profile photo-Image (1).png"
+            class=" absolute  z-20 w-[70%] lg:w-[20rem] ml-8 xl:w-[28rem] md:w-45 mt-24 md:mt-16 lg:left-0 xl:left-8">
+          <img src="images/home-Dots.png" alt="home dots"
+            class="absolute  z-30 w-14 xl:-right-4 md:bottom-6 md:right-36 xl:left- xl:top-[18rem] right-24 xl:bottom-[1rem] xl:-right-6 md:w-16 top-[15rem]  ">
+          <div
+            class="absolute z-40   ml-8 w-[90%] top-[20rem] -left-6 lg:top-[20rem]  xl:top-[23rem] xl:my-16 xl:ml-12 lg:my-4 lg:py-5 lg:-left-[1.5rem] xl:left-8 flex items-center xl:w-[25rem] lg:w-[80%] gap-2 py-1 border border-[#ABB2BF] bg-[#282C33] text-base font-medium md:w-[80%] md:-left-6 md:-bottom-[2rem]">
+            <div class="w-4 h-4 shrink-0 bg-[#C778DD] ml-2"></div>
+            <p class="text-[#ABB2BF]">Currently working on <span class="text-white">Portfolio</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="lg:mt-20 xl:mt-40 md:mt-32 hidden md:block xl:mt-40 lg:mt-10   md:mx-48 xl:mx-[18rem]  max-w-md md:text-xl lg:text-2xl lg:ml-52 md:w-1/2 lg:w-[60%] relative ">
+      <img src="images/“.png" class="absolute -top-3 left-3 bg-[#282C33] px-1">
+      <h1 class="font-medium border border-[#ABB2BF] lg:w-[44.5rem] md:w-[38rem]  p-[1.5rem] ">With great power comes
+        great electricity bill</h1>
+      <img src="images/“.png" class="absolute   md:-right-[12rem] lg:-right-[15rem] md:bottom-[3.2rem]  bg-[#282C33] px-1">
+      <h1
+        class=" border-t-0 border border-[#ABB2BF] lg:w-[10.3rem] md:w-[9rem] md:text-lg lg:text-xl  lg:ml-[34.2rem] md:ml-[29rem]  p-[1rem]">
+        - Dr. Who</h1>
+    </div>
+  </section>
+
+  <!---------PROJECT SECTION----------------->
+ 
+  <section >    
+     <div class="md:flex mt-10  ml-4 items-center md:mx-32 md:mt-20 lg:mt-20 lg:w-fit  xl:mt-20 xl:mx-40">
+      <div>
+       <h1 class="font-medium  text-[32px] "><span class="text-[#C778DD]">#</span>projects</h1>
+       </div>
+       <div class="flex md:block md:gap-0 gap-6">
+      <img src="images/project-line.png" class="md:ml-4 w-[70%] object-contain lg:w-[88%] xl:ml-6"><span class="md:hidden">~~></span>
+       </div>
+       <div class="xl:ml-32 md:-mr-56 hidden sm:flex  whitespace-nowrap ">
+       <p class="">View all ~~></p>
+       </div>
+     </div>
+  
+     <div class="md:flex justify-center mt-5 ml-4 md:ml-36 md:w-[118%] lg:w-[89%] xl:w-[91%] lg:ml-32 xl:ml-12 md:gap-6 lg:gap-8   lg:mt-10 md:mt-10 xl:mt-16  text-[#ABB2BF] text-base ">
+      <div class="border border-[#ABB2BF]  md:w-[75%] w-[70%] mx-auto xl:mx-0 lg:w-[35%] xl:w-[23.4%] h-fit pb-4 ">
+        <img src="images/project-1.jpg"class="xl:w-fit lg:w-fit md:w-fit">
+        <p class="ml-2 py-1">HTML SCSS Python Flask</p><hr class="border-[#ABB2BF]">
+        <h1 class="ml-4  font-medium text-[20px] xl:text-[24px] text-white py-2 xl:py-4">ChertNodes</h1>
+        <p class="ml-4 lg:w-[60%]">Minecraft servers hosting</p>
+        <div class="ml-4 space-x-2 mt-2">
+          <button class="xl:w-28 w-24  border border-[#C778DD] h-9">Live <~> </button>
+          <button class="border border-[#ABB2BF] h-9 w-24  xl:w-28">Cached >= </button>
+        </div>
+      </div>
+
+      <div class="text-base border border-[#ABB2BF] md:w-[75%] w-[70%] mx-auto xl:mx-0 lg:w-[35%] xl:w-[23.4%] my-6 md:my-0 h-fit   pb-4">
+        <img src="images/project-2.png" class="xl:w-fit lg:w-fit md:w-fit">
+        <p class="py-3 ml-2">React Express Discord.js Node.js </p>
+        <p class="ml-2 mb-1">HTML SCSS Python Flask</p><hr class="border-[#ABB2BF]">
+        <h1 class="ml-4  font-medium  text-[20px] xl:text-[24px] text-white xl:py-4 py-2">ProtectX</h1>
+        <p class="ml-4 mb-2">Discord anti-crash bot</p>
+         <button class="ml-4  w-24   border border-[#C778DD] xl:w-28 h-9  ">Live <~> </button>
+      </div>
+
+      <div class="text-base border border-[#ABB2BF] md:w-[75%] w-[70%] mx-auto xl:mx-0  lg:w-[35%] xl:w-[23.4%] h-fit pb-4" >
+        <img src="images/project-3.png" class="xl:w-fit lg:w-fit md:w-fit">
+        <p class="ml-2 py-1">CSS Express Node.js</p><hr class="border-[#ABB2BF]">
+        <h1 class="ml-4 lg:w-60 font-medium xl:text-[24px] text-[20px] text-white xl:py-3.5 xl:w-72 leading-[2rem]">Kahoot Answers Viewer</h1>
+        <p class="ml-4 mb-2 ">Get answers to your kahoot quiz</p>
+        <button class=" ml-4 w-24  xl:w-28  border border-[#C778DD] h-9"> Live <~> </button>
+      </div>
+     </div>
+  </section>
+  <!----------------SKILLS------------------------->
+  
+  <section>
+  <div class="md:flex items-center ml-4  mt-10 md:mx-32  xl:mx-44 lg:mt-20 md:mt-10  lg:mx-32 md:w-fit">
+         <h1 class="font-medium  text-[32px] "><span class="text-[#C778DD]">#</span>skills</h1>
+        <div class="flex  gap-6">
+        <img src="images/skills-line.png" class="md:ml-6 object-contain "><span class="md:hidden">~~></span>
+        </div>
+      </div>
+
+    
+
+        <div class="md:flex justify-between  md:space-x-56 lg:space-x-0 xl:space-y-12  text-base text-[#ABB2BF]">
+          <div class="lg:grid hidden md:block  md:mx-40 xl:ml-52 md:mt-10 lg:mt-0  lg:mx-28">
+          <div class=" flex xl:space-x-40 md:space-x-24 ">
+            <img src="images/skill dot.png" class="object-scale-down xl:mt-12">
+            <img src="images/Rectangle 24.png" class="object-scale-down ">
+          </div>
+
+         <div class="flex w-fit xl:space-x-12 lg:-space-x-8 md:space-x-12 lg:space-x-0">
+          <img src="images/skill logo.png" class="object-scale-down  w-full xl:mt-20 md:mt-10">
+          <img src="images/skill dot.png" class="object-scale-down w-full md:-mt-10  lg:-mt-0 xl:-mt-10 ">
+          <img src="images/Rectangle 23.png"class="object-scale-down xl:mt-20">
+         </div>
+         </div>
+      
+
+
+<div class=" md:grid mt-5  md:mt-0 md:grid-cols-2 xl:grid-cols-3 md:gap-4 xl:gap-0  xl:ml-10  md:w-fit ">
+  <!-- Languages -->
+  <div class="w-[178px] h-fit mx-auto border border-[#ABB2BF]  lg:ml-8 xl:ml-2">
+    <h1 class="w-fit text-white font-bold ml-2 my-2">Languages</h1>
+    <hr class="border-[#ABB2BF]">
+    <p class="ml-2">TypeScript Lua Python JavaScript</p>
+  </div>
+
+  <!-- Databases -->
+  <div class="w-[178px] h-fit mx-auto  my-6 md:my-0 border border-[#ABB2BF] md:ml-32 lg:ml-0">
+    <h1 class="w-fit text-white font-bold ml-2 my-2  ">Databases</h1>
+    <hr class="border-[#ABB2BF]">
+    <p class="ml-2">SQLite postgreSQL Mongo</p>
+  </div>
+
+  <!-- Tools -->
+  <div class="w-[196px] h-fit mx-auto  border border-[#ABB2BF] lg:col-start-2 xl:col-start-3">
+    <h1 class="w-fit text-white font-bold ml-2 my-2">Tools</h1>
+    <hr class="border-[#ABB2BF]">
+    <p class="ml-2">VSCode Neovin Linux</p>
+    <p class="ml-2">Figma XFCE Arch</p>
+    <p class="ml-2">Git Font Awesome</p>
+  </div>
+
+  <!-- Other -->
+  <div class="w-[178px] h-fit mx-auto my-6 md:my-0 border border-[#ABB2BF] md:ml-32 lg:ml-8 lg:-mt-28 xl:ml-0 xl:col-start-2 xl:-mt-4">
+    <h1 class="w-fit text-white font-bold ml-2 my-2">Other</h1>
+    <hr class="border-[#ABB2BF]">
+    <p class="ml-2">HTML CSS EJS SCSS</p>
+    <p class="ml-2">REST Jinja</p>
+  </div>
+
+  <!-- Frameworks -->
+  <div class="w-[196px] h-fit mx-auto border border-[#ABB2BF] xl:ml-0 xl:col-start-3 lg:col-start-2">
+    <h1 class="w-fit text-white font-bold ml-2 my-2">Frameworks</h1>
+    <hr class="border-[#ABB2BF]">
+    <p class="ml-2">React Vue</p>
+    <p class="ml-2">Disnake Discord.js</p>
+    <p class="ml-2">Flask Express.js</p>
+  </div>
+</div>
+
+  </section>
+
+  <section>
+    <!-- About Me Section -->
+    <div class="md:flex mx-4 mt-10 items-center md:mx-36 md:mt-10 xl:mx-48 lg:mx-36  lg:mt-20 ">
+       <h1 class="font-medium  text-[32px] whitespace-nowrap "><span class="text-[#C778DD]">#</span>about-me</h1>
+      <div class="flex gap-6">
+        <img src="images/about-line.png" class="xl:ml-6 md:ml-4 w-[70%] object-contain"><span class="md:hidden">~~></span>
+      </div>
+    </div>
+
+    <div class="md:flex  md:mx-32 xl:mx-0 xl:ml-44 relative lg:gap-12">
+    <div class="xl:w-[50%] ml-4 lg:w-[75%] md:w-fit ">
+      <p class=" md:mt-6 mt-2 text-[#ABB2BF]  w-fit">Hello, i’m David!<br> 
+        <p  class=" text-[#ABB2BF] w-[90%] leading-loose lg:w-[90%] md:w-fit xl:w-[79%]   mt-6">I’m a self-taught front-end developer based in Ibadan, Nigeria. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences.</p>
+           <p class="mt-6 w-[85%]  md:w-fit xl:w-[80%] lg:w-[90%] text-[#ABB2BF] leading-loose ">Transforming my creativity and knowledge into a websites has been my passion for over a year. I have been helping various clients to establish their presence online. I always strive to learn about the newest technologies and frameworks.</p>
+      <button class=" mt-4 border border-[#C778DD] w-[148px] h-[37px] font-medium">Read more -></button>
+    </div>
+
+    <div class="hidden md:flex  xl:w-fit xl:mb-4 xl:ml-14  ">
+      <img src="images/home-Dots.png" class="absolute md:top-8  xl:top-6 md:z-20">
+      <img src="images/about me-image.png" class=" absolute md:w-[280px] xl:w-[339px] xl:-bottom-8">
+      <img src="images/abour-dot.png" class="absolute xl:bottom-[8.5rem] z-30 md:bottom-36  md:-right-64 lg:-right-32 xl:right-[9rem] xl:">
+      <img src="images/about-stroke.png" class="absolute xl:-bottom-8 md:bottom-4 xl:right-[9rem] md: lg:-right-36 ">      
+    </div>
+    </div>
+  </section>
+
+<section>
+  <!------contact section----->
+    <div class="md:mt-20 mt-10 mx-4  md:mx-36 md:flex lg:mx-32  items-center xl:mx-48 ">
+      <h1 class="font-medium  text-[32px]"><span class="text-[#C778DD]">#</span>contacts</h1>
+      <div class="flex gap-6">
+        <img src="images/contact-line.png" class="w-[70%] md:ml-6 md:w-[80%] object-contain"><span class="md:hidden">~~></span>
+      </div>
+    </div>
+
+   <div class="hidden md:flex justify-center  md:gap-20 xl:space-x-8 xl:-mr-0 mx-auto mt-10 w-fit md:-mr-44 ">
+    <div class="xl:w-[37%] lg:w-[42%] lg:-ml-20 md:w-[70%] md:ml-36  ">
+      <p>I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me</p>
+    </div>
+
+    <div class="border border-[#ABB2BF] p-2  xl:w-[20%]">
+      <p>Mesage me here</p>
+
+      <div class="md:flex items-center gap-2">
+        <img src="images/Discord.png" alt="discord">
+        <p>de_webdev</p>
+      </div>
+      <div class="md:flex items-center gap-2">
+        <img src="images/Email.png" alt="discord">
+        <p>dafenone2006@gmail.com</p>
+      </div> 
+    </div>
+   </div><hr class="hidden md:block mt-20 w-full">
+
+
+ <form class="mx-4 mt-2 md:hidden">
+  <input type="text" placeholder="Name" class="border border-[#ABB2BF] focus:outline-none 	bg-transparent">
+  <input type="email" placeholder="Email" class=" border border-[#ABB2BF]	bg-transparent my-4 ">
+  <input type="text" placeholder="Title" class=" border border-[#ABB2BF]	bg-transparent w-[80%] mb-4">
+ <textarea id="message" placeholder="message" rows="4" cols="50" class="border border-[#ABB2BF]	bg-transparent w-[80%]"></textarea>
+ </form>
+ 
+ <button class=" md:hidden border border-[#C778DD] font-medium mx-4 w-[71px] h-[37px]">Send</button>
+
+</section>
+
+<footer>
+  <!-- Footer Section -->
+  <div class="flex justify-around md:justify-between   lg:ml-0 lg:-ml-6 mt-16">
+
+    <div class="md:mx-32 xl:mx-48">
+    <div class="flex items-center mx-4 ">
+      <div class="mr-2">
+      <img src="images/Union.png">
+      </div>
+      <p class="font-medium ">David</p>
+       <p class="text-[#ABB2BF] ml-6  hidden md:block">dafenone2006@gmail.com</p>
+    </div>
+     <p class="my-6 w-[60%] md:w-[100%]  mx-4">Web Designer and front-end developer</p>
+    </div>
+
+      <div class="w-fit md:mr-20 md:-mr-28 xl:mr-auto xl:ml-48">
+        <h1 class="font-medium text-[24px]">Media</h1>
+        <div class="flex mt-2 gap-2">
+             <a href="https://github.com/DE-WebDev">
+          <img src="images/Github.png" alt="github" class=" " title="github">
+        </a>
+        <a
+          href="https://www.figma.com/files/team/1371911806218491679/user/1371911804005777204?fuid=1371911804005777204">
+          <img src="images/Figma.png" alt="figma"  title="figma">
+          <a href="https://discord.com/channels/@me"><img src="images/Discord.png"></a>
+        </div>
+      </div>
+  </div>
+ 
+  <div class="mx-auto my-8 md:my-6 lg:mx-auto lg:t lg:my-8 md:mr-20 w-fit text-[#ABB2BF]">
+    <p class="">&copy; Copyright 2022. Made by David</p>
+  </div>
+
+</footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
